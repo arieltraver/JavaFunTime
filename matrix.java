@@ -31,8 +31,8 @@ public class Matrix {
 
     public Matrix(int[][] arr) {
         this.arr = arr;
-        numRows = arr[][0].length;
-        numCols = arr[0][].length;
+        numRows = arr.length;
+        numCols = arr[0].length;
     }
 
     public int getNumCols() {
@@ -111,7 +111,7 @@ public class Matrix {
         }
     }
 
-    public static void main(string[] args) {
+    public static void main(String[] args) {
     }
 
 }
