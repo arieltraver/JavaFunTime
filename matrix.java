@@ -61,6 +61,14 @@ public class Matrix {
             arr[x][y] = val;
         }
     }
+
+    public void setAll(int num){
+        for (int r = 0; r < numRows; r++) {
+            for (int c = 0; c < numCols; c++) {
+                arr[r][c] = num;
+            }
+        }
+    }
     
     /***zeroify
      * If a zero is found in the row of the matrix, turns the whole row and column into zeroes **/
@@ -112,6 +120,14 @@ public class Matrix {
     }
 
     public static void main(String[] args) {
+        Matrix a = new Matrix(5, 5);
+        a.setAll(5);
+        a.zeroify();
+        a.printMatrix();
+        a.setIndex(2, 2, 0);
+        a.zeroify();
+        a.printMatrix();
+        //free(a) haha jk
     }
 
 }
